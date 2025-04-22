@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Tombol Kembali -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/buttonback"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#7B3FA3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnBack"
+            android:layout_marginTop="16dp" />
+
+        <!-- Gambar Ilustrasi -->
+        <ImageView
+            android:id="@+id/imageIlustrasi"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/iconregister"
+            android:scaleType="fitCenter"
+            app:layout_constraintTop_toBottomOf="@id/txtRegister"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Nama Anak -->
+        <EditText
+            android:id="@+id/etNamaAnak"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="👦 nama anak"
+            android:inputType="textPersonName"
+            android:backgroundTint="#7B3FA3"
+            android:textColorHint="#7B3FA3"
+            app:layout_constraintTop_toBottomOf="@id/imageIlustrasi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Umur -->
+        <EditText
+            android:id="@+id/etUmur"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="# umur"
+            android:inputType="number"
+            android:backgroundTint="#7B3FA3"
+            android:textColorHint="#7B3FA3"
+            app:layout_constraintTop_toBottomOf="@id/etNamaAnak"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Email Orang Tua -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="📧 email orang tua (optional)"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="#7B3FA3"
+            android:textColorHint="#7B3FA3"
+            app:layout_constraintTop_toBottomOf="@id/etUmur"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="👤 username"
+            android:inputType="text"
+            android:backgroundTint="#7B3FA3"
+            android:textColorHint="#7B3FA3"
+            app:layout_constraintTop_toBottomOf="@id/etEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="🔒 password"
+            android:inputType="textPassword"
+            android:backgroundTint="#7B3FA3"
+            android:textColorHint="#7B3FA3"
+            app:layout_constraintTop_toBottomOf="@id/etUsername"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Tombol Register -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textStyle="bold"
+            android:backgroundTint="#7B3FA3"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/etPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
