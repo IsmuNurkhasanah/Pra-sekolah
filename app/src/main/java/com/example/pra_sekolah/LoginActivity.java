@@ -2,8 +2,10 @@ package com.example.pra_sekolah;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -16,8 +18,12 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
+
+import api.ApiClient;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -27,6 +33,15 @@ public class LoginActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
 
+        ImageView back = findViewById(R.id.back_button);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent back = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(back);
+                finish();
+            }
+        });
     }
 
     public void Login_user (View view){
@@ -40,20 +55,27 @@ public class LoginActivity extends AppCompatActivity {
 
         if (!username_us.isEmpty() && !pass_us.isEmpty()) {
             RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-            String url = "http://192.168.15.126/prasekolah/login.php";
 
-            StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+            StringRequest stringRequest = new StringRequest(Request.Method.POST, ApiClient.LOGIN_URL,
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
-
-                            if (response.equals("Success")) {
-                                Toast.makeText(getApplicationContext(), "Login berhasil!" , Toast.LENGTH_SHORT).show();
-                                Intent login = new Intent(LoginActivity.this, MenuActivity.class);
-                                startActivity(login);
-                                finish();
-                            } else {
-                                Toast.makeText(LoginActivity.this, "Username atau Password Salah!", Toast.LENGTH_SHORT).show();
+                            Log.d("SERVER_RESPONSE", response);
+                            try {
+                                JSONObject jsonObject = new JSONObject(response);
+                                String status = jsonObject.getString("status");
+                                if (status.equals("Success")) {
+                                    Toast.makeText(getApplicationContext(), "Login berhasil!", Toast.LENGTH_SHORT).show();
+                                    Intent login = new Intent(LoginActivity.this, MenuActivity.class);
+                                    login.putExtra("username_us", username_us);
+                                    startActivity(login);
+                                    finish();
+                                } else {
+                                    Toast.makeText(LoginActivity.this, "Username atau Password Salah!", Toast.LENGTH_SHORT).show();
+                                }
+                            } catch (Exception e){
+                                e.printStackTrace();
+                                Toast.makeText(LoginActivity.this, "Terjadi kesalahan saat memproses data!", Toast.LENGTH_SHORT).show();
                             }
                         }
                     }, new Response.ErrorListener() {
