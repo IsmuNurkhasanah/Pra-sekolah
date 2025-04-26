@@ -7,7 +7,7 @@
     android:background="#F5F5F5"
     tools:context=".LoginActivity">
 
-    <View
+    <TextView
         android:id="@+id/top_bar"
         android:layout_width="0dp"
         android:layout_height="56dp"
@@ -55,8 +55,8 @@
 
     <LinearLayout
         android:id="@+id/username_layout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_marginStart="32dp"
@@ -70,13 +70,13 @@
             android:layout_width="31dp"
             android:layout_height="31dp"
             android:layout_marginEnd="8dp"
-            android:src="@drawable/username"
-            android:color="#757575" />
+            android:color="#757575"
+            android:src="@drawable/username" />
 
         <EditText
             android:id="@+id/username_edit_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#BDBDBD"
             android:hint="username"
@@ -89,8 +89,8 @@
 
     <LinearLayout
         android:id="@+id/password_layout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_marginStart="32dp"
@@ -109,8 +109,8 @@
 
         <EditText
             android:id="@+id/password_edit_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#BDBDBD"
             android:hint="password"
@@ -126,9 +126,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#673AB7"
+        android:onClick="Login_user"
         android:paddingVertical="16dp"
         android:text="Login"
         android:textColor="#FFFFFF"
