@@ -57,6 +57,7 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="alfabet"
             app:cardBackgroundColor="#E0BBE4"
             app:cardCornerRadius="8dp">
 
@@ -95,6 +96,7 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="number"
             app:cardBackgroundColor="#E0BBE4"
             app:cardCornerRadius="8dp">
 
@@ -133,6 +135,7 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="form"
             app:cardBackgroundColor="#E0BBE4"
             app:cardCornerRadius="8dp">
 
@@ -171,6 +174,7 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="color"
             app:cardBackgroundColor="#E0BBE4"
             app:cardCornerRadius="8dp">
 
@@ -209,6 +213,7 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="direction"
             app:cardBackgroundColor="#E0BBE4"
             app:cardCornerRadius="8dp">
 
@@ -247,6 +252,7 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="animal"
             app:cardBackgroundColor="#E0BBE4"
             app:cardCornerRadius="8dp">
 
@@ -286,6 +292,7 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="quiz"
             app:cardBackgroundColor="#E0BBE4"
             app:cardCornerRadius="8dp">
 

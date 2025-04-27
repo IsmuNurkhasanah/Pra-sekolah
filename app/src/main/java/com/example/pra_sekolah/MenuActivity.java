@@ -4,11 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -71,5 +75,47 @@ public class MenuActivity extends AppCompatActivity {
             }
         };
         queue.add(stringRequest);
+    }
+
+    public void alfabet (View view){
+        Intent start_alfa = new Intent(MenuActivity.this, AlfabetActivity.class);
+        startActivity(start_alfa);
+        finish();
+    }
+
+    public void number (View view){
+        Intent start_numb = new Intent(getApplicationContext(), NumberActivity.class);
+        startActivity(start_numb);
+        finish();
+    }
+
+    public void form (View view){
+        Intent start_form = new Intent(getApplicationContext(), FormActivity.class);
+        startActivity(start_form);
+        finish();
+    }
+
+    public void color (View view){
+        Intent start_color = new Intent(getApplicationContext(), ColorActivity.class);
+        startActivity(start_color);
+        finish();
+    }
+
+    public void direction (View view){
+        Intent start_direct = new Intent(getApplicationContext(), DirectionActivity.class);
+        startActivity(start_direct);
+        finish();
+    }
+
+    public void animal (View view){
+        Intent start_animal = new Intent(getApplicationContext(), AlfabetActivity.class);
+        startActivity(start_animal);
+        finish();
+    }
+
+    public void quiz (View view){
+        Intent start_quiz = new Intent(getApplicationContext(), AlfabetActivity.class);
+        startActivity(start_quiz);
+        finish();
     }
 }

@@ -4,39 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#FFFFFF"> <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:background="#FFFFFF"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text_alphabet_learning"
-        android:layout_width="168dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1st alphabet learning"
-        android:textColor="#800080"
-        android:textSize="12sp" />
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/text_ayo_belajar"
-        android:layout_width="218dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_alphabet_learning"
-        android:layout_marginTop="14dp"
-        android:text="Ayo Belajar !"
-        android:textColor="#800080"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/text_alphabet_learning"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:text="1st alphabet learning"
+            android:textColor="#800080"
+            android:textSize="12sp" />
 
-    <ImageView
-        android:layout_width="65dp"
-        android:layout_height="58dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="28dp"
-        android:contentDescription="Profil"
-        android:src="@drawable/username" />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/text_ayo_belajar"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_alphabet_learning"
+            android:layout_marginTop="14dp"
+            android:text="Ayo Belajar !"
+            android:textColor="#800080"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="58dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="28dp"
+            android:contentDescription="Profil"
+            android:src="@drawable/username" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,50 +52,59 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.6"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.6"
-                android:background="@drawable/rounded_border"> <View
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:background="#800080"
-                android:layout_gravity="center"/>
+                android:background="@drawable/rounded_border">
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:background="#800080" />
             </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.4"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_border"/> <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="1dp">
+                android:layout_weight="0.4"
+                android:background="@drawable/rounded_border" />
 
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/button_previus"
-                android:contentDescription="Kembali"
-                android:padding="8dp" /> <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/button_mic"
-            android:contentDescription="Rekam"
-            android:padding="8dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"/> <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/button_next"
-            android:contentDescription="Lanjut"
-            android:padding="8dp" /> </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="Kembali"
+                    android:padding="8dp"
+                    android:src="@drawable/button_previus" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:contentDescription="Rekam"
+                    android:padding="8dp"
+                    android:src="@drawable/button_mic" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="Lanjut"
+                    android:padding="8dp"
+                    android:src="@drawable/button_next" />
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -119,153 +130,177 @@
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_b"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf B"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_b" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_c"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf C"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_c" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_d"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf D"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_d" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_e"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf E"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_e" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_f"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf F"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_f" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_g"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf G"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_g" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_h"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf H"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_h" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_i"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf I"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_i" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_j"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf J"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_j" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_k"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf K"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_k" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_l"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf L"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_l" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_m"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf M"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_m" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_n"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf N"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_n" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_o"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf O"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_o" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_p"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf P"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_p" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_q"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf Q"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_q" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_r"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf R"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_r" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_s"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf S"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_s" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_t"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf T"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_t" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_u"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf U"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_u" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_v"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf V"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_v" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_w"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf W"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_w" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_x"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf X"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_x" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_y"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf Y"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_y" />
+
                 <ImageView
                     android:layout_width="67dp"
                     android:layout_height="73dp"
-                    android:src="@drawable/isi_z"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Huruf Z"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/isi_z" />
 
             </LinearLayout>
 
@@ -276,25 +311,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:orientation="horizontal"
-        android:background="#9C27B0"> <ImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/before_normal"
-        android:padding="12dp"
-        android:contentDescription="Menu" /> <ImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/home_normal"
-        android:padding="12dp"
-        android:contentDescription="Beranda" /> <ImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/nextstep_normal"
-        android:padding="12dp"
-        android:contentDescription="Maju" /> </LinearLayout>
+        android:background="#9C27B0"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Menu"
+            android:padding="12dp"
+            android:src="@drawable/before_normal" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Beranda"
+            android:padding="12dp"
+            android:src="@drawable/home_normal" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Maju"
+            android:padding="12dp"
+            android:src="@drawable/nextstep_normal" />
+    </LinearLayout>
 
 </LinearLayout>
