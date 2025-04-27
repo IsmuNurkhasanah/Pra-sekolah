@@ -117,26 +117,26 @@
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/shape_square"
+                    android:src="@drawable/square"
                     android:contentDescription="Bentuk Kotak"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="16dp"/>
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/shape_circle"
+                    android:src="@drawable/circle"
                     android:contentDescription="Bentuk Lingkaran"
                     android:layout_marginBottom="16dp"/>
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/shape_triangle"
+                    android:src="@drawable/triangle"
                     android:contentDescription="Bentuk Segitiga"
                     android:layout_marginBottom="16dp"/>
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/shape_square"
+                    android:src="@drawable/start"
                     android:contentDescription="Bentuk Kotak"
                     android:layout_marginBottom="16dp"/>
             </LinearLayout>
