@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"> <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_number_learning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2nd number learning"
+        android:textSize="12sp"
+        android:textColor="#800080" />
+    <TextView
+        android:id="@+id/text_ayo_belajar"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_number_learning"
+        android:layout_marginTop="14dp"
+        android:text="Ayo Belajar !"
+        android:textColor="#800080"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/username"
+        android:contentDescription="Profil" /> </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/rounded_border"> <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="#800080"
+                android:layout_gravity="center"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_border"/> <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="1dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/button_previus"
+                android:contentDescription="Kembali"
+                android:padding="8dp" /> <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/button_mic"
+            android:contentDescription="Rekam"
+            android:padding="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/> <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/button_next"
+            android:contentDescription="Lanjut"
+            android:padding="8dp" /> </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:paddingStart="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/satu"
+                    android:contentDescription="Angka 1"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/dua"
+                    android:contentDescription="Angka 2"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/tiga"
+                    android:contentDescription="Angka 3"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/lima"
+                    android:contentDescription="Angka 5"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/enam"
+                    android:contentDescription="Angka 6"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/tujuh"
+                    android:contentDescription="Angka 7"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/delapan"
+                    android:contentDescription="Angka 8"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/sembilan"
+                    android:contentDescription="Angka 9"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/nol"
+                    android:contentDescription="Angka 0"
+                    android:layout_marginBottom="8dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#9C27B0"> <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/before_normal"
+        android:padding="12dp"
+        android:contentDescription="Menu" /> <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/home_normal"
+        android:padding="12dp"
+        android:contentDescription="Beranda" /> <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/nextstep_normal"
+        android:padding="12dp"
+        android:contentDescription="Maju" /> </LinearLayout>
+
+</LinearLayout>

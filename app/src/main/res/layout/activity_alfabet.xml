@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"> <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_alphabet_learning"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:text="1st alphabet learning"
+        android:textColor="#800080"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_ayo_belajar"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_alphabet_learning"
+        android:layout_marginTop="14dp"
+        android:text="Ayo Belajar !"
+        android:textColor="#800080"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:contentDescription="Profil"
+        android:src="@drawable/username" />
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/rounded_border"> <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="#800080"
+                android:layout_gravity="center"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_border"/> <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="1dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/button_previus"
+                android:contentDescription="Kembali"
+                android:padding="8dp" /> <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/button_mic"
+            android:contentDescription="Rekam"
+            android:padding="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/> <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/button_next"
+            android:contentDescription="Lanjut"
+            android:padding="8dp" /> </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:paddingStart="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="Huruf A"
+                    android:src="@drawable/isi_a" />
+
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_b"
+                    android:contentDescription="Huruf B"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_c"
+                    android:contentDescription="Huruf C"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_d"
+                    android:contentDescription="Huruf D"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_e"
+                    android:contentDescription="Huruf E"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_f"
+                    android:contentDescription="Huruf F"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_g"
+                    android:contentDescription="Huruf G"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_h"
+                    android:contentDescription="Huruf H"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_i"
+                    android:contentDescription="Huruf I"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_j"
+                    android:contentDescription="Huruf J"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_k"
+                    android:contentDescription="Huruf K"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_l"
+                    android:contentDescription="Huruf L"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_m"
+                    android:contentDescription="Huruf M"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_n"
+                    android:contentDescription="Huruf N"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_o"
+                    android:contentDescription="Huruf O"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_p"
+                    android:contentDescription="Huruf P"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_q"
+                    android:contentDescription="Huruf Q"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_r"
+                    android:contentDescription="Huruf R"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_s"
+                    android:contentDescription="Huruf S"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_t"
+                    android:contentDescription="Huruf T"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_u"
+                    android:contentDescription="Huruf U"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_v"
+                    android:contentDescription="Huruf V"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_w"
+                    android:contentDescription="Huruf W"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_x"
+                    android:contentDescription="Huruf X"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_y"
+                    android:contentDescription="Huruf Y"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="73dp"
+                    android:src="@drawable/isi_z"
+                    android:contentDescription="Huruf Z"
+                    android:layout_marginBottom="8dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#9C27B0"> <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/before_normal"
+        android:padding="12dp"
+        android:contentDescription="Menu" /> <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/home_normal"
+        android:padding="12dp"
+        android:contentDescription="Beranda" /> <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/nextstep_normal"
+        android:padding="12dp"
+        android:contentDescription="Maju" /> </LinearLayout>
+
+</LinearLayout>
