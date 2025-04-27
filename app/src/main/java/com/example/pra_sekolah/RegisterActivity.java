@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -16,8 +17,12 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
+
+import api.ApiClient;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -27,6 +32,15 @@ public class RegisterActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_register);
 
+        ImageView back = findViewById(R.id.back_button);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent back = new Intent(RegisterActivity.this, LoginActivity.class);
+                startActivity(back);
+                finish();
+            }
+        });
     }
 
     public void Add_user (View view){
@@ -46,19 +60,28 @@ public class RegisterActivity extends AppCompatActivity {
 
         if (!dtnama_anak.isEmpty() && !dtumur_anak.isEmpty() && !dtemail.isEmpty() && !dtusername.isEmpty() && !dtpassword.isEmpty()) {
             RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-            String url = "http://192.168.15.126/prasekolah/create.php";
 
-            StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+            StringRequest stringRequest = new StringRequest(Request.Method.POST, ApiClient.REGISTER_URL,
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
-                            if (response.equals("Success")) {
-                                Toast.makeText(getApplicationContext(), "Registrasi berhasil!" , Toast.LENGTH_SHORT).show();
-                                Intent regist = new Intent(RegisterActivity.this, LoginActivity.class);
-                                startActivity(regist);
-                                finish();
-                            } else {
-                                Toast.makeText(RegisterActivity.this, "Registrasi Gagal!", Toast.LENGTH_SHORT).show();
+                            try {
+                                JSONObject jsonObject = new JSONObject(response);
+                                String status = jsonObject.getString("status");
+                                if (status.equals("Success")) {
+                                    Toast.makeText(getApplicationContext(), "Registrasi berhasil!" , Toast.LENGTH_SHORT).show();
+                                    Intent regist = new Intent(RegisterActivity.this, LoginActivity.class);
+                                    startActivity(regist);
+                                    finish();
+                                } else if (status.equals("!Username")) {
+                                    Toast.makeText(RegisterActivity.this, "Username sudah digunakan!", Toast.LENGTH_SHORT).show();
+                                } else {
+                                    Toast.makeText(RegisterActivity.this, "Registrasi Gagal!", Toast.LENGTH_SHORT).show();
+                                }
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                                Toast.makeText(RegisterActivity.this, "Terjadi kesalahan saat memproses data!", Toast.LENGTH_SHORT).show();
+
                             }
                         }
                     }, new Response.ErrorListener() {

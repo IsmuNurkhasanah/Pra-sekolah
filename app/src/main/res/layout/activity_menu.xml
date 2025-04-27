@@ -16,11 +16,10 @@
     android:paddingBottom="16dp">
 
     <TextView
-        android:id="@+id/greetingTextView"
+        android:id="@+id/nama_user"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Hi, Asep Jelpa"
         android:textSize="20sp"
         android:textStyle="bold" />
 
