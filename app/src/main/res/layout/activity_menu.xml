@@ -28,6 +28,8 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:contentDescription="Profil Pengguna"
+            android:clickable="true"
+            android:focusable="true"
             android:src="@drawable/username" />
 
     </LinearLayout>
@@ -43,7 +45,7 @@
 
     <GridLayout
         android:layout_width="380dp"
-        android:layout_height="471dp"
+        android:layout_height="479dp"
         android:columnCount="3"
         android:rowCount="3">
 
@@ -51,7 +53,9 @@
             android:id="@+id/alphabetCardView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_row="0"
             android:layout_rowWeight="1"
+            android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             android:clickable="true"
@@ -90,7 +94,9 @@
             android:id="@+id/numberCardView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_row="0"
             android:layout_rowWeight="1"
+            android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             android:clickable="true"
@@ -129,7 +135,9 @@
             android:id="@+id/formCardView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_row="0"
             android:layout_rowWeight="1"
+            android:layout_column="2"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             android:clickable="true"
@@ -168,7 +176,9 @@
             android:id="@+id/colorCardView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_row="1"
             android:layout_rowWeight="1"
+            android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             android:clickable="true"
@@ -207,7 +217,9 @@
             android:id="@+id/directionCardView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_row="1"
             android:layout_rowWeight="1"
+            android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             android:clickable="true"
@@ -246,7 +258,9 @@
             android:id="@+id/animalsCardView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_row="1"
             android:layout_rowWeight="1"
+            android:layout_column="2"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             android:clickable="true"
@@ -282,17 +296,19 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/quizCardView"
+            android:id="@+id/quitCardView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_row="2"
             android:layout_rowWeight="1"
-            android:layout_columnSpan="3"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            android:onClick="quiz"
+            android:onClick="quitApp"
             app:cardBackgroundColor="#E0BBE4"
             app:cardCornerRadius="8dp">
 
@@ -306,34 +322,20 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:contentDescription="Quiz"
-                    android:src="@drawable/quizz" />
+                    android:contentDescription="QUIT"
+                    android:src="@drawable/logout_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="QUIZ"
+                    android:text="QUIT"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:visibility="gone" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:visibility="gone" />
 
     </GridLayout>
 
