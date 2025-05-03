@@ -1,6 +1,13 @@
 package com.example.pra_sekolah;
 
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.FrameLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,5 +23,41 @@ public class ColorActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_color);
 
+        ImageView before = findViewById(R.id.before_img);
+        before.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent before_page = new Intent(ColorActivity.this, FormActivity.class);
+                startActivity(before_page);
+                finish();
+            }
+        });
+
+        ImageView home = findViewById(R.id.home_img);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent home_page = new Intent(ColorActivity.this, MenuActivity.class);
+                startActivity(home_page);
+                finish();
+            }
+        });
+
+        ImageView next = findViewById(R.id.next_img);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent next_page = new Intent(ColorActivity.this, DirectionActivity.class);
+                startActivity(next_page);
+                finish();
+            }
+        });
+    }
+
+    public void KlikColor(View view) {
+        View tampil = findViewById(R.id.isiColor);
+        ColorDrawable klik = (ColorDrawable) view.getBackground();
+        int warnaSet = klik.getColor();
+        tampil.setBackgroundColor(warnaSet);
     }
 }

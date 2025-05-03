@@ -4,35 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#FFFFFF"> <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:background="#FFFFFF"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text_direction_learning"
-        android:layout_width="168dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="5th direction learning"
-        android:textSize="12sp"
-        android:textColor="#800080" />
-    <TextView
-        android:id="@+id/text_ayo_belajar"
-        android:layout_width="218dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_direction_learning"
-        android:layout_marginTop="14dp"
-        android:text="Ayo Belajar !"
-        android:textColor="#800080"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-    <ImageView
-        android:layout_width="65dp"
-        android:layout_height="58dp"
-        android:layout_alignParentEnd="true"
-        android:src="@drawable/username"
-        android:contentDescription="Profil" /> </RelativeLayout>
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_direction_learning"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:text="5th direction learning"
+            android:textColor="#800080"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_ayo_belajar"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_direction_learning"
+            android:layout_marginTop="14dp"
+            android:text="Ayo Belajar !"
+            android:textColor="#800080"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="58dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Profil"
+            android:src="@drawable/username" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,68 +51,46 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.6"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.3"
-                android:background="@drawable/rounded_border"> <View
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:background="#800080"
-                android:layout_gravity="center"/>
+                android:background="@drawable/rounded_border">
+
+                <View
+                    android:id="@+id/isiColor"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center" />
             </FrameLayout>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="SAMPLE"
-                android:textSize="18sp"
-                android:textColor="#800080"
-                android:layout_marginTop="8dp"
-                android:textAlignment="center"
-                android:background="@drawable/rounded_border"
-                android:padding="16dp"/>
-
-            <TextView
+                android:id="@+id/sample1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="SAMPLE"
-                android:textSize="18sp"
-                android:textColor="#800080"
-                android:textAlignment="center"
                 android:background="@drawable/rounded_border"
                 android:padding="16dp"
-                android:gravity="center"/>
+                android:text="SAMPLE"
+                android:textAlignment="center"
+                android:textColor="#800080"
+                android:textSize="18sp" />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/sample2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_border"
                 android:gravity="center"
-                android:layout_marginTop="16dp">
-
-                <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/button_previus"
-                    android:contentDescription="Kembali"
-                    android:padding="8dp" /> <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/button_mic"
-                android:contentDescription="Rekam"
-                android:padding="8dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"/> <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/button_next"
-                android:contentDescription="Lanjut"
-                android:padding="8dp" /> </LinearLayout>
+                android:padding="16dp"
+                android:text="SAMPLE"
+                android:textAlignment="center"
+                android:textColor="#800080"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -120,55 +103,64 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/arrowcircleright"
-                    android:contentDescription="Atas"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@drawable/rounded_border"
+                    android:contentDescription="Kanan"
+                    android:onClick="KlikDirect"
                     android:padding="16dp"
                     android:scaleType="fitCenter"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/arrowcircleright" />
+
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/arrowcircleleft"
-                    android:contentDescription="Bawah"
+                    android:layout_marginBottom="8dp"
                     android:background="@drawable/rounded_border"
-                    android:padding="16dp"
-                    android:scaleType="fitCenter"
-                    android:layout_marginBottom="8dp"/>
-                <ImageView
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:src="@drawable/arrowcircledownright"
-                    android:contentDescription="Kiri Panjang"
-                    android:background="@drawable/rounded_border"
-                    android:padding="16dp"
-                    android:scaleType="fitCenter"
-                    android:layout_marginBottom="8dp"/>
-                <ImageView
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:src="@drawable/arrowcircledownleft"
-                    android:contentDescription="Kanan Panjang"
-                    android:background="@drawable/rounded_border"
-                    android:padding="16dp"
-                    android:scaleType="fitCenter"
-                    android:layout_marginBottom="8dp"/>
-                <ImageView
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:src="@drawable/arrowcircledown"
                     android:contentDescription="Kiri"
-                    android:background="@drawable/rounded_border"
+                    android:onClick="KlikDirect"
                     android:padding="16dp"
                     android:scaleType="fitCenter"
-                    android:layout_marginBottom="8dp"/>
+                    android:src="@drawable/arrowcircleleft" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_border"
+                    android:contentDescription="Serong Kanan"
+                    android:onClick="KlikDirect"
+                    android:padding="16dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/arrowcircledownright" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_border"
+                    android:contentDescription="Serong Kiri"
+                    android:onClick="KlikDirect"
+                    android:padding="16dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/arrowcircledownleft" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_border"
+                    android:contentDescription="Bawah"
+                    android:onClick="KlikDirect"
+                    android:padding="16dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/arrowcircledown" />
             </LinearLayout>
 
         </ScrollView>
@@ -178,25 +170,35 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:orientation="horizontal"
-        android:background="#9C27B0"> <ImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/before_normal"
-        android:padding="12dp"
-        android:contentDescription="Kembali" /> <ImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/home_normal"
-        android:padding="12dp"
-        android:contentDescription="Beranda" /> <ImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/nextstep_normal"
-        android:padding="12dp"
-        android:contentDescription="Maju" /> </LinearLayout>
+        android:background="#9C27B0"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/before_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Menu"
+            android:padding="12dp"
+            android:src="@drawable/before_normal" />
+
+        <ImageView
+            android:id="@+id/home_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Beranda"
+            android:padding="12dp"
+            android:src="@drawable/home_normal" />
+
+        <ImageView
+            android:id="@+id/next_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Maju"
+            android:padding="12dp"
+            android:src="@drawable/nextstep_normal" />
+    </LinearLayout>
 
 </LinearLayout>

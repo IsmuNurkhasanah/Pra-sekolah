@@ -4,35 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#FFFFFF"> <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:background="#FFFFFF"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text_number_learning"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2nd number learning"
-        android:textSize="12sp"
-        android:textColor="#800080" />
-    <TextView
-        android:id="@+id/text_ayo_belajar"
-        android:layout_width="224dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_number_learning"
-        android:layout_marginTop="14dp"
-        android:text="Ayo Belajar !"
-        android:textColor="#800080"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-    <ImageView
-        android:layout_width="65dp"
-        android:layout_height="58dp"
-        android:layout_alignParentEnd="true"
-        android:src="@drawable/username"
-        android:contentDescription="Profil" /> </RelativeLayout>
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_number_learning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd number learning"
+            android:textColor="#800080"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_ayo_belajar"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_number_learning"
+            android:layout_marginTop="14dp"
+            android:text="Ayo Belajar !"
+            android:textColor="#800080"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="58dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Profil"
+            android:src="@drawable/username" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,50 +51,37 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.6"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.6"
-                android:background="@drawable/rounded_border"> <View
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:background="#800080"
-                android:layout_gravity="center"/>
+                android:background="@drawable/rounded_border">
+
+                <View
+                    android:id="@+id/isiAngka"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center" />
             </FrameLayout>
 
-            <FrameLayout
+            <com.example.pra_sekolah.DrawingView
+                android:id="@+id/drawing_view"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.4"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_border"/> <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="1dp">
+                android:layout_weight="0.4"
+                android:background="@drawable/rounded_border" />
 
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/button_previus"
-                android:contentDescription="Kembali"
-                android:padding="8dp" /> <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/button_mic"
-            android:contentDescription="Rekam"
-            android:padding="8dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"/> <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/button_next"
-            android:contentDescription="Lanjut"
-            android:padding="8dp" /> </LinearLayout>
+            <Button
+                android:id="@+id/button_hapus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="Hapus" />
 
         </LinearLayout>
 
@@ -102,64 +94,81 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/satu"
-                    android:contentDescription="Angka 1"
                     android:layout_marginTop="16dp"
-                    android:layout_marginBottom="8dp"/>
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="Angka 1"
+                    android:onClick="KlikAngka"
+                    android:src="@drawable/satu" />
+
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/dua"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Angka 2"
-                    android:layout_marginBottom="8dp"/>
+                    android:onClick="KlikAngka"
+                    android:src="@drawable/dua" />
+
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/tiga"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Angka 3"
-                    android:layout_marginBottom="8dp"/>
+                    android:onClick="KlikAngka"
+                    android:src="@drawable/tiga" />
+
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/lima"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Angka 5"
-                    android:layout_marginBottom="8dp"/>
+                    android:onClick="KlikAngka"
+                    android:src="@drawable/lima" />
+
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/enam"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Angka 6"
-                    android:layout_marginBottom="8dp"/>
+                    android:onClick="KlikAngka"
+                    android:src="@drawable/enam" />
+
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/tujuh"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Angka 7"
-                    android:layout_marginBottom="8dp"/>
+                    android:onClick="KlikAngka"
+                    android:src="@drawable/tujuh" />
+
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/delapan"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Angka 8"
-                    android:layout_marginBottom="8dp"/>
+                    android:onClick="KlikAngka"
+                    android:src="@drawable/delapan" />
+
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/sembilan"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Angka 9"
-                    android:layout_marginBottom="8dp"/>
+                    android:onClick="KlikAngka"
+                    android:src="@drawable/sembilan" />
+
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
-                    android:src="@drawable/nol"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="Angka 0"
-                    android:layout_marginBottom="8dp"/>
+                    android:onClick="KlikAngka"
+                    android:src="@drawable/nol" />
 
             </LinearLayout>
 
@@ -170,25 +179,35 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:orientation="horizontal"
-        android:background="#9C27B0"> <ImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/before_normal"
-        android:padding="12dp"
-        android:contentDescription="Menu" /> <ImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/home_normal"
-        android:padding="12dp"
-        android:contentDescription="Beranda" /> <ImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/nextstep_normal"
-        android:padding="12dp"
-        android:contentDescription="Maju" /> </LinearLayout>
+        android:background="#9C27B0"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/before_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Menu"
+            android:padding="12dp"
+            android:src="@drawable/before_normal" />
+
+        <ImageView
+            android:id="@+id/home_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Beranda"
+            android:padding="12dp"
+            android:src="@drawable/home_normal" />
+
+        <ImageView
+            android:id="@+id/next_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="Maju"
+            android:padding="12dp"
+            android:src="@drawable/nextstep_normal" />
+    </LinearLayout>
 
 </LinearLayout>
