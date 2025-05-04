@@ -308,7 +308,7 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            android:onClick="quitApp"
+            android:onClick="quit"
             app:cardBackgroundColor="#E0BBE4"
             app:cardCornerRadius="8dp">
 

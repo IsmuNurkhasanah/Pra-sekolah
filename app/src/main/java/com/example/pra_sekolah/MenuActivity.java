@@ -113,9 +113,9 @@ public class MenuActivity extends AppCompatActivity {
         finish();
     }
 
-    public void quiz (View view){
-        Intent start_quiz = new Intent(getApplicationContext(), AlfabetActivity.class);
-        startActivity(start_quiz);
+    public void quit (View view){
+        Intent start_quit = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(start_quit);
         finish();
     }
 }
