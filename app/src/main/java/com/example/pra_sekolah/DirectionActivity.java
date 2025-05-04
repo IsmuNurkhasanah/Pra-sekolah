@@ -47,7 +47,7 @@ public class DirectionActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent next_page = new Intent(DirectionActivity.this, MenuActivity.class);
+                Intent next_page = new Intent(DirectionActivity.this, AnimalsActivity.class);
                 startActivity(next_page);
                 finish();
             }
@@ -55,13 +55,12 @@ public class DirectionActivity extends AppCompatActivity {
     }
 
     public void KlikDirect(View view) {
-        View tampil = findViewById(R.id.isiHuruf);
+        View tampil = findViewById(R.id.isiDirect);
         TextView sample1 = findViewById(R.id.sample1);
         if (view instanceof ImageView) {
             ImageView klik = (ImageView) view;
             klik.getDrawable().setCallback(null);
             tampil.setBackground(klik.getDrawable());
-
             String textPilih1 = klik.getContentDescription().toString();
             sample1.setText(textPilih1);
         }

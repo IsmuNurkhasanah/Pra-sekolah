@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -64,10 +65,13 @@ public class FormActivity extends AppCompatActivity {
 
     public void KlikForm(View view) {
         View tampil = findViewById(R.id.isiForm);
+        TextView sample = findViewById(R.id.sample);
         if (view instanceof ImageView) {
             ImageView klik = (ImageView) view;
             klik.getDrawable().setCallback(null);
             tampil.setBackground(klik.getDrawable());
+            String textPilih1 = klik.getContentDescription().toString();
+            sample.setText(textPilih1);
         }
     }
 }

@@ -108,7 +108,7 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void animal (View view){
-        Intent start_animal = new Intent(getApplicationContext(), AlfabetActivity.class);
+        Intent start_animal = new Intent(getApplicationContext(), AnimalsActivity.class);
         startActivity(start_animal);
         finish();
     }

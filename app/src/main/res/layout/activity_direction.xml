@@ -61,7 +61,7 @@
                 android:background="@drawable/rounded_border">
 
                 <View
-                    android:id="@+id/isiColor"
+                    android:id="@+id/isiDirect"
                     android:layout_width="150dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center" />
@@ -74,20 +74,6 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/rounded_border"
                 android:padding="16dp"
-                android:text="SAMPLE"
-                android:textAlignment="center"
-                android:textColor="#800080"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/sample2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_border"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="SAMPLE"
                 android:textAlignment="center"
                 android:textColor="#800080"
                 android:textSize="18sp" />

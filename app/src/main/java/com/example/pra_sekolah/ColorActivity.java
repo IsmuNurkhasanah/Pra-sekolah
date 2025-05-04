@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -59,5 +60,9 @@ public class ColorActivity extends AppCompatActivity {
         ColorDrawable klik = (ColorDrawable) view.getBackground();
         int warnaSet = klik.getColor();
         tampil.setBackgroundColor(warnaSet);
+        TextView sample1 = findViewById(R.id.sample1);
+        String textPilih1 = view.getContentDescription().toString();
+        sample1.setText(textPilih1);
+
     }
 }

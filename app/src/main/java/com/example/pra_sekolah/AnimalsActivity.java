@@ -201,10 +201,42 @@ public class AnimalsActivity extends AppCompatActivity {
                 bukalamanHewan("Z");
             }
         });
+
+
+
+        ImageView before = findViewById(R.id.before_img);
+        before.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent before_page = new Intent(AnimalsActivity.this, DirectionActivity.class);
+                startActivity(before_page);
+                finish();
+            }
+        });
+
+        ImageView home = findViewById(R.id.home_img);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent home_page = new Intent(AnimalsActivity.this, MenuActivity.class);
+                startActivity(home_page);
+                finish();
+            }
+        });
+
+        ImageView next = findViewById(R.id.next_img);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent next_page = new Intent(AnimalsActivity.this, MenuActivity.class);
+                startActivity(next_page);
+                finish();
+            }
+        });
     }
 
     private void bukalamanHewan(String huruf) {
-        Intent buka_hal = new Intent(this, AnimalsActivity.class);
+        Intent buka_hal = new Intent(this, AnimalsActivity2.class);
         buka_hal.putExtra("huruf", huruf);
         startActivity(buka_hal);
     }
