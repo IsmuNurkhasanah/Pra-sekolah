@@ -19,6 +19,8 @@ public class AnimalsActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_animals);
 
+        String user_us = getIntent().getStringExtra("username_us");
+
         ImageView imageA = findViewById(R.id.image_a);
         imageA.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -203,12 +205,12 @@ public class AnimalsActivity extends AppCompatActivity {
         });
 
 
-
         ImageView before = findViewById(R.id.before_img);
         before.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent before_page = new Intent(AnimalsActivity.this, DirectionActivity.class);
+                before_page.putExtra("username_us", user_us);
                 startActivity(before_page);
                 finish();
             }
@@ -219,6 +221,7 @@ public class AnimalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent home_page = new Intent(AnimalsActivity.this, MenuActivity.class);
+                home_page.putExtra("username_us", user_us);
                 startActivity(home_page);
                 finish();
             }
@@ -229,6 +232,7 @@ public class AnimalsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent next_page = new Intent(AnimalsActivity.this, MenuActivity.class);
+                next_page.putExtra("username_us", user_us);
                 startActivity(next_page);
                 finish();
             }

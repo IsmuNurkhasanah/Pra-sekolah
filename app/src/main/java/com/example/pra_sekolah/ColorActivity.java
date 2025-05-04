@@ -24,11 +24,14 @@ public class ColorActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_color);
 
+        String user_us = getIntent().getStringExtra("username_us");
+
         ImageView before = findViewById(R.id.before_img);
         before.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent before_page = new Intent(ColorActivity.this, FormActivity.class);
+                before_page.putExtra("username_us", user_us);
                 startActivity(before_page);
                 finish();
             }
@@ -39,6 +42,7 @@ public class ColorActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent home_page = new Intent(ColorActivity.this, MenuActivity.class);
+                home_page.putExtra("username_us", user_us);
                 startActivity(home_page);
                 finish();
             }
@@ -49,6 +53,7 @@ public class ColorActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent next_page = new Intent(ColorActivity.this, DirectionActivity.class);
+                next_page.putExtra("username_us", user_us);
                 startActivity(next_page);
                 finish();
             }

@@ -23,6 +23,8 @@ public class FormActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_form);
 
+        String user_us = getIntent().getStringExtra("username_us");
+
         DrawingView drawingView = findViewById(R.id.drawing_view);
         Button hapus_draw = findViewById(R.id.button_hapus);
         hapus_draw.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +39,7 @@ public class FormActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent before_page = new Intent(FormActivity.this, NumberActivity.class);
+                before_page.putExtra("username_us", user_us);
                 startActivity(before_page);
                 finish();
             }
@@ -47,6 +50,7 @@ public class FormActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent home_page = new Intent(FormActivity.this, MenuActivity.class);
+                home_page.putExtra("username_us", user_us);
                 startActivity(home_page);
                 finish();
             }
@@ -57,6 +61,7 @@ public class FormActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent next_page = new Intent(FormActivity.this, ColorActivity.class);
+                next_page.putExtra("username_us", user_us);
                 startActivity(next_page);
                 finish();
             }

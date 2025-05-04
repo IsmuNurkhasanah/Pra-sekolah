@@ -33,13 +33,14 @@ import api.ApiClient;
 
 public class MenuActivity extends AppCompatActivity {
 
+    String user_us;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_menu);
 
-        String user_us = getIntent().getStringExtra("username_us");
+        user_us = getIntent().getStringExtra("username_us");
         RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, ApiClient.READ_URL,
@@ -79,36 +80,42 @@ public class MenuActivity extends AppCompatActivity {
 
     public void alfabet (View view){
         Intent start_alfa = new Intent(MenuActivity.this, AlfabetActivity.class);
+        start_alfa.putExtra("username_us", user_us);
         startActivity(start_alfa);
         finish();
     }
 
     public void number (View view){
         Intent start_numb = new Intent(getApplicationContext(), NumberActivity.class);
+        start_numb.putExtra("username_us", user_us);
         startActivity(start_numb);
         finish();
     }
 
     public void form (View view){
         Intent start_form = new Intent(getApplicationContext(), FormActivity.class);
+        start_form.putExtra("username_us", user_us);
         startActivity(start_form);
         finish();
     }
 
     public void color (View view){
         Intent start_color = new Intent(getApplicationContext(), ColorActivity.class);
+        start_color.putExtra("username_us", user_us);
         startActivity(start_color);
         finish();
     }
 
     public void direction (View view){
         Intent start_direct = new Intent(getApplicationContext(), DirectionActivity.class);
+        start_direct.putExtra("username_us", user_us);
         startActivity(start_direct);
         finish();
     }
 
     public void animal (View view){
         Intent start_animal = new Intent(getApplicationContext(), AnimalsActivity.class);
+        start_animal.putExtra("username_us", user_us);
         startActivity(start_animal);
         finish();
     }

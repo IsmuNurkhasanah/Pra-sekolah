@@ -22,6 +22,8 @@ public class AlfabetActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_alfabet);
 
+        String user_us = getIntent().getStringExtra("username_us");
+
         DrawingView drawingView = findViewById(R.id.drawing_view);
         Button hapus_draw = findViewById(R.id.button_hapus);
         hapus_draw.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +38,7 @@ public class AlfabetActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent before_page = new Intent(AlfabetActivity.this, MenuActivity.class);
+                before_page.putExtra("username_us", user_us);
                 startActivity(before_page);
                 finish();
             }
@@ -46,6 +49,7 @@ public class AlfabetActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent home_page = new Intent(AlfabetActivity.this, MenuActivity.class);
+                home_page.putExtra("username_us", user_us);
                 startActivity(home_page);
                 finish();
             }
@@ -56,6 +60,7 @@ public class AlfabetActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent next_page = new Intent(AlfabetActivity.this, NumberActivity.class);
+                next_page.putExtra("username_us", user_us);
                 startActivity(next_page);
                 finish();
             }
