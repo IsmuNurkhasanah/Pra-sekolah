@@ -1,16 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical"
-    android:gravity="center">
+    tools:context=".AnimalsActivity2">
 
-    <TextView
-        android:id="@+id/text_huruf"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:text="Informasi huruf akan ditampilkan di sini" />
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_animal_learning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6th animals learning"
+            android:textColor="#800080"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_ayo_belajar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_animal_learning"
+            android:layout_marginTop="14dp"
+            android:text="Ayo Belajar !"
+            android:textColor="#800080"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Profil Pengguna"
+            android:scaleType="centerCrop"
+            android:src="@drawable/monamour" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/animal_image_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/rounded_border_blue"
+            android:contentDescription="Gambar Hewan"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/monkey" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Tulis pertanyaan Anda tentang hewan ini:"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/gemini_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:gravity="top"
+            android:hint="Contoh: Apa nama hewan ini? Apa makanannya?"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:minLines="2"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:backgroundTint="#9C27B0"
+            android:text="Kirim ke Gemini AI"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/gemini_response_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_response_background"
+            android:minHeight="80dp"
+            android:padding="8dp"
+            android:text="Jawaban dari Gemini AI akan muncul di sini."
+            android:textColor="#555555"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#9C27B0"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Kembali"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp"
+            android:src="@drawable/before_normal" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Beranda"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp"
+            android:src="@drawable/home_normal" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Maju"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp"
+            android:src="@drawable/nextstep_normal" />
+    </LinearLayout>
 
 </LinearLayout>
