@@ -17,7 +17,7 @@
             android:layout_width="168dp"
             android:layout_height="wrap_content"
             android:text="3rd form learning"
-            android:textColor="#800080"
+            android:textColor="#81C784"
             android:textSize="12sp" />
 
         <TextView
@@ -27,7 +27,7 @@
             android:layout_below="@id/text_form_learning"
             android:layout_marginTop="14dp"
             android:text="Ayo Belajar !"
-            android:textColor="#800080"
+            android:textColor="#81C784"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -36,7 +36,7 @@
             android:layout_height="58dp"
             android:layout_alignParentEnd="true"
             android:contentDescription="Profil"
-            android:src="@drawable/username" />
+            android:src="@drawable/monamour" />
     </RelativeLayout>
 
     <LinearLayout
@@ -90,6 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
+                android:backgroundTint="#4FC3F7"
                 android:text="Hapus" />
 
         </LinearLayout>
@@ -138,6 +139,118 @@
                     android:contentDescription="Bintang"
                     android:onClick="KlikForm"
                     android:src="@drawable/start" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/arror" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/cross" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/jajar_genjang" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/kite" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/love" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/octagon" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/pentagon" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/reactangle" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/rhombus" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/ring" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/segi8" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/semimiracle" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/trapeze" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Bintang"
+                    android:onClick="KlikForm"
+                    android:src="@drawable/vector" />
             </LinearLayout>
 
         </ScrollView>
@@ -147,7 +260,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="#9C27B0"
+        android:background="#4FC3F7"
         android:orientation="horizontal">
 
         <ImageView

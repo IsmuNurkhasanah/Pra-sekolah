@@ -17,7 +17,7 @@
             android:layout_width="168dp"
             android:layout_height="wrap_content"
             android:text="5th direction learning"
-            android:textColor="#800080"
+            android:textColor="#81C784"
             android:textSize="12sp" />
 
         <TextView
@@ -27,7 +27,7 @@
             android:layout_below="@id/text_direction_learning"
             android:layout_marginTop="14dp"
             android:text="Ayo Belajar !"
-            android:textColor="#800080"
+            android:textColor="#81C784"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -36,7 +36,7 @@
             android:layout_height="58dp"
             android:layout_alignParentEnd="true"
             android:contentDescription="Profil"
-            android:src="@drawable/username" />
+            android:src="@drawable/monamour" />
     </RelativeLayout>
 
     <LinearLayout
@@ -115,6 +115,29 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/arrowcircleleft" />
 
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_border"
+                    android:contentDescription="Bawah"
+                    android:onClick="KlikDirect"
+                    android:padding="16dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/arrowcircleup" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_border"
+                    android:contentDescription="Bawah"
+                    android:onClick="KlikDirect"
+                    android:padding="16dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/arrowcircledown" />
+
                 <ImageView
                     android:layout_width="72dp"
                     android:layout_height="72dp"
@@ -146,7 +169,18 @@
                     android:onClick="KlikDirect"
                     android:padding="16dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/arrowcircledown" />
+                    android:src="@drawable/arrowcircleupleft" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_border"
+                    android:contentDescription="Bawah"
+                    android:onClick="KlikDirect"
+                    android:padding="16dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/arrowcircleupright" />
             </LinearLayout>
 
         </ScrollView>
@@ -156,7 +190,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="#9C27B0"
+        android:background="#4FC3F7"
         android:orientation="horizontal">
 
         <ImageView

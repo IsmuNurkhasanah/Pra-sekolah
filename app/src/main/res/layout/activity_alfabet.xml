@@ -17,7 +17,7 @@
             android:layout_width="168dp"
             android:layout_height="wrap_content"
             android:text="1st alphabet learning"
-            android:textColor="#800080"
+            android:textColor="#81C784"
             android:textSize="12sp" />
 
         <TextView
@@ -27,17 +27,17 @@
             android:layout_below="@id/text_alphabet_learning"
             android:layout_marginTop="14dp"
             android:text="Ayo Belajar !"
-            android:textColor="#800080"
+            android:textColor="#81C784"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="58dp"
+            android:layout_width="66dp"
+            android:layout_height="62dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="28dp"
+            android:layout_marginEnd="38dp"
             android:contentDescription="Profil"
-            android:src="@drawable/username" />
+            android:src="@drawable/monamour" />
     </RelativeLayout>
 
     <LinearLayout
@@ -72,16 +72,18 @@
                 android:id="@+id/drawing_view"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.4"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_border"/>
+                android:layout_weight="0.4"
+                android:background="@drawable/rounded_border" />
+
             <Button
                 android:id="@+id/button_hapus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hapus"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"/>
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#4FC3F7"
+                android:text="Hapus" />
         </LinearLayout>
 
         <ScrollView
@@ -313,7 +315,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="#9C27B0"
+        android:background="#4FC3F7"
         android:orientation="horizontal">
 
         <ImageView

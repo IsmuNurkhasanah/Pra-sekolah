@@ -17,7 +17,7 @@
 
         <TextView
             android:id="@+id/nama_user"
-            android:layout_width="0dp"
+            android:layout_width="292dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="20sp"
@@ -25,12 +25,12 @@
 
         <ImageView
             android:id="@+id/profileImageView"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:contentDescription="Profil Pengguna"
+            android:layout_width="66dp"
+            android:layout_height="81dp"
             android:clickable="true"
+            android:contentDescription="Profil Pengguna"
             android:focusable="true"
-            android:src="@drawable/username" />
+            android:src="@drawable/monamour" />
 
     </LinearLayout>
 
@@ -62,7 +62,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:onClick="alfabet"
-            app:cardBackgroundColor="#E0BBE4"
+            app:cardBackgroundColor="#4FC3F7"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
@@ -103,7 +103,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:onClick="number"
-            app:cardBackgroundColor="#E0BBE4"
+            app:cardBackgroundColor="#4FC3F7"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
@@ -144,7 +144,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:onClick="form"
-            app:cardBackgroundColor="#E0BBE4"
+            app:cardBackgroundColor="#4FC3F7"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
@@ -185,7 +185,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:onClick="color"
-            app:cardBackgroundColor="#E0BBE4"
+            app:cardBackgroundColor="#4FC3F7"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
@@ -226,7 +226,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:onClick="direction"
-            app:cardBackgroundColor="#E0BBE4"
+            app:cardBackgroundColor="#4FC3F7"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
@@ -267,7 +267,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:onClick="animal"
-            app:cardBackgroundColor="#E0BBE4"
+            app:cardBackgroundColor="#4FC3F7"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
@@ -309,7 +309,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:onClick="quit"
-            app:cardBackgroundColor="#E0BBE4"
+            app:cardBackgroundColor="#4FC3F7"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
