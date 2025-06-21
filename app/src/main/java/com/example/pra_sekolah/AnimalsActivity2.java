@@ -26,7 +26,7 @@ import okhttp3.*;
 
 public class AnimalsActivity2 extends AppCompatActivity {
 
-    private static final String API_KEY = "AIzaSyBmJ2HzFs1dnITBCczbqIK5RC1BUDug2iA";
+    private static final String API_KEY = BuildConfig.GEMINI_API_KEY;
     private static final String ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + API_KEY;
 
     private EditText inputPertanyaan;
