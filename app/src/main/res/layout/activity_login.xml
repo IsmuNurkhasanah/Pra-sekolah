@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="#FAF9F6"
     tools:context=".LoginActivity">
 
     <TextView
@@ -57,14 +57,14 @@
         android:id="@+id/username_layout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@id/login_illustration"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/login_illustration">
 
         <ImageView
             android:layout_width="31dp"
@@ -91,21 +91,21 @@
         android:id="@+id/password_layout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/username_layout"
+        android:layout_marginEnd="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/username_layout">
 
         <ImageView
             android:layout_width="31dp"
             android:layout_height="32dp"
             android:layout_marginEnd="8dp"
-            android:src="@drawable/icon_password"
-            android:color="#757575" />
+            android:color="#757575"
+            android:src="@drawable/icon_password" />
 
         <EditText
             android:id="@+id/password_edit_text"
