@@ -152,14 +152,6 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Salib"
-                    android:onClick="KlikForm"
-                    android:src="@drawable/cross" />
-
-                <ImageView
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:layout_marginBottom="16dp"
                     android:contentDescription="Jajar Genjang"
                     android:onClick="KlikForm"
                     android:src="@drawable/jajar_genjang" />

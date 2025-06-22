@@ -57,16 +57,16 @@
             <FrameLayout
 
 
-                android:layout_width="227dp"
-                android:layout_height="502dp"
+                android:layout_width="match_parent"
+                android:layout_height="415dp"
                 android:layout_weight="0.3"
                 android:background="@drawable/rounded_border">
 
 
                 <View
                     android:id="@+id/isiColor"
-                    android:layout_width="238dp"
-                    android:layout_height="498dp"
+                    android:layout_width="215dp"
+                    android:layout_height="400dp"
                     android:layout_gravity="center" />
             </FrameLayout>
 
