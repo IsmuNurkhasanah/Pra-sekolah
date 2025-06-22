@@ -65,8 +65,8 @@
 
                 <View
                     android:id="@+id/isiColor"
-                    android:layout_width="215dp"
-                    android:layout_height="400dp"
+                    android:layout_width="190dp"
+                    android:layout_height="390dp"
                     android:layout_gravity="center" />
             </FrameLayout>
 
