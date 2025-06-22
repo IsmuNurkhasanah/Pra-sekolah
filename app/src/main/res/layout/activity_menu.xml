@@ -37,6 +37,7 @@
 
     <TextView
         android:id="@+id/titleTextView"
+        android:textColor="#81C784"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -46,7 +47,7 @@
 
     <GridLayout
         android:layout_width="380dp"
-        android:layout_height="479dp"
+        android:layout_height="528dp"
         android:columnCount="3"
         android:rowCount="3">
 
@@ -68,14 +69,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
                     android:contentDescription="Alfabet"
                     android:src="@drawable/menu_alfabet" />
 
@@ -109,14 +110,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
                     android:contentDescription="Number"
                     android:src="@drawable/menu_number" />
 
@@ -150,14 +151,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
                     android:contentDescription="Form"
                     android:src="@drawable/menu_form" />
 
@@ -191,14 +192,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
                     android:contentDescription="Color"
                     android:src="@drawable/menu_color" />
 
@@ -232,14 +233,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
                     android:contentDescription="Direction"
                     android:src="@drawable/menu_direction" />
 
@@ -273,14 +274,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
                     android:contentDescription="Animals"
                     android:src="@drawable/menu_animals" />
 
@@ -315,14 +316,15 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#F5DBFF"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
                     android:contentDescription="QUIT"
                     android:src="@drawable/logout_icon" />
 

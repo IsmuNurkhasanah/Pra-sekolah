@@ -49,7 +49,7 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="564dp"
             android:layout_weight="0.6"
             android:gravity="center_horizontal"
             android:orientation="vertical">
@@ -62,8 +62,8 @@
 
                 <View
                     android:id="@+id/isiForm"
-                    android:layout_width="150dp"
-                    android:layout_height="200dp"
+                    android:layout_width="196dp"
+                    android:layout_height="204dp"
                     android:layout_gravity="center" />
             </FrameLayout>
 
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:textAlignment="center"
-                android:textColor="#800080"
+                android:textColor="#000000"
                 android:textSize="18sp" />
 
             <com.example.pra_sekolah.DrawingView
@@ -144,7 +144,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Panah"
                     android:onClick="KlikForm"
                     android:src="@drawable/arror" />
 
@@ -152,7 +152,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Salib"
                     android:onClick="KlikForm"
                     android:src="@drawable/cross" />
 
@@ -160,7 +160,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Jajar Genjang"
                     android:onClick="KlikForm"
                     android:src="@drawable/jajar_genjang" />
 
@@ -168,7 +168,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Layang-layang"
                     android:onClick="KlikForm"
                     android:src="@drawable/kite" />
 
@@ -176,7 +176,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Hati"
                     android:onClick="KlikForm"
                     android:src="@drawable/love" />
 
@@ -184,7 +184,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Segi Enam"
                     android:onClick="KlikForm"
                     android:src="@drawable/octagon" />
 
@@ -192,7 +192,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Segi Lima"
                     android:onClick="KlikForm"
                     android:src="@drawable/pentagon" />
 
@@ -200,7 +200,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Persegi Panjang"
                     android:onClick="KlikForm"
                     android:src="@drawable/reactangle" />
 
@@ -208,7 +208,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Belah Ketupat"
                     android:onClick="KlikForm"
                     android:src="@drawable/rhombus" />
 
@@ -216,7 +216,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Cincin"
                     android:onClick="KlikForm"
                     android:src="@drawable/ring" />
 
@@ -224,7 +224,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Segi Delapan"
                     android:onClick="KlikForm"
                     android:src="@drawable/segi8" />
 
@@ -232,7 +232,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Setengah Lingkaran"
                     android:onClick="KlikForm"
                     android:src="@drawable/semimiracle" />
 
@@ -240,7 +240,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Trapesium"
                     android:onClick="KlikForm"
                     android:src="@drawable/trapeze" />
 
@@ -248,7 +248,7 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Bintang"
+                    android:contentDescription="Bulan Sabit"
                     android:onClick="KlikForm"
                     android:src="@drawable/vector" />
             </LinearLayout>

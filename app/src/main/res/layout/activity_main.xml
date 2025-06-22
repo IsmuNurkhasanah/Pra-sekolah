@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="SELAMAT\nDATANG DI\nMON AMOUR"
         android:textAlignment="center"
-        android:textColor="#4FC3F7"
+        android:textColor="#81C784"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/start_button"
